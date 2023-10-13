@@ -9,8 +9,10 @@
  * Text Domain:       blocks-u
  *
  */
-include_once('metabox.php');
-include_once('templates.php');
+include_once('php/metabox.php');
+include_once('php/templates.php');
+include_once('php/patterns.php');
+include_once('php/filters.php');
 function blocks_u_plugin_enqueue_assets() {
 
     $asset_file = include(plugin_dir_path( __FILE__ ) . 'build/index.asset.php');

@@ -1,12 +1,12 @@
 import { registerPlugin } from '@wordpress/plugins';
 import {
 	PluginSidebar,
-	/* PluginDocumentSettingPanel,
+	PluginDocumentSettingPanel,
 	PluginPostStatusInfo,
 	PluginPrePublishPanel,
 	PluginPostPublishPanel,
 	PluginMoreMenuItem,
-	PluginBlockSettingsMenuItem, */
+	PluginBlockSettingsMenuItem,
 } from '@wordpress/edit-post';
 import { __ } from '@wordpress/i18n';
 import { PanelBody, TextControl } from '@wordpress/components';
@@ -39,7 +39,7 @@ registerPlugin( 'blocks-u-plugin', {
 	render: () => {
 		return (
 			<>
-				{ /* <PluginDocumentSettingPanel
+				<PluginDocumentSettingPanel
 					title="My panel"
 					icon="admin-collapse"
 				>
@@ -67,7 +67,7 @@ registerPlugin( 'blocks-u-plugin', {
 					label="New Item"
 					// eslint-disable-next-line no-alert, no-undef
 					onClick={ () => alert( true ) }
-				/> */ }
+				/>
 				<PluginSidebar
 					name="meta-fields-sidebar"
 					icon="admin-settings"
